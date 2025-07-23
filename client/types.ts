@@ -5,8 +5,6 @@ export interface Creator {
   followers: string;
   bio: string;
   image: string;
-  social?: {
-    instagram?: string;
-    youtube?: string;
-  };
+  social_instagram: string;
+  social_youtube: string;
 }

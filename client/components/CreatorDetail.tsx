@@ -27,13 +27,13 @@ const CreatorDetail: React.FC<Props> = ({ creator, onBack }) => {
       <Text style={styles.subtitle}>{creator.category} | {creator.followers}</Text>
       <Text style={styles.bio}>{creator.bio}</Text>
 
-      {creator.social?.instagram && (
-        <TouchableOpacity onPress={() => handleLink(creator.social?.instagram ?? '')}>
+      {creator.social_instagram && (
+        <TouchableOpacity onPress={() => handleLink(creator.social_instagram ??'')}>
           <Text style={styles.link}>Instagram</Text>
         </TouchableOpacity>
       )}
-      {creator.social?.youtube && (
-        <TouchableOpacity onPress={() => handleLink(creator.social?.youtube ?? '')}>
+      {creator.social_youtube && (
+        <TouchableOpacity onPress={() => handleLink(creator.social_youtube ?? '')}>
           <Text style={styles.link}>YouTube</Text>
         </TouchableOpacity>
       )}
